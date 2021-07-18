@@ -1,5 +1,5 @@
 # Gradient Calculator
-![ATM Kiosk System](https://user-images.githubusercontent.com/22479692/126051660-dbdff86b-3370-4933-9391-20b3d716bca0.png)
+![Gradient Calculator Kotlin](https://user-images.githubusercontent.com/22479692/126076017-a8006225-0e1d-4813-b00b-feb3b17426fa.png)
 Simple Calculator app using Kotlin language with the Android Studio IDE. Features a gradient background.  
   
   ✦ Programming Language; Kotlin    
