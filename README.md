@@ -1,4 +1,4 @@
-# Kotlin Calculator
+# Gradient Calculator
 ![ATM Kiosk System](https://user-images.githubusercontent.com/22479692/126051660-dbdff86b-3370-4933-9391-20b3d716bca0.png)
 Simple Calculator app using Kotlin language with the Android Studio IDE. Features a gradient background.  
   
@@ -21,6 +21,7 @@ Simple Calculator app using Kotlin language with the Android Studio IDE. Feature
 ![gradientcalculator](https://user-images.githubusercontent.com/22479692/126052868-ce42d6a3-7d57-4cbe-bd22-55babcaf61ac.png)
 
   Minimum SDK: 28  
+  Application only runs in Portrait Mode (Landscape disabled)
 
 
 
