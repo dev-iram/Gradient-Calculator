@@ -22,15 +22,16 @@ Simple Calculator app using Kotlin language with the Android Studio IDE. Feature
   ✦ Minimum SDK: 28  
   ✦ Application only runs in Portrait Mode (Landscape disabled).   
   ✦ TextViews are scrollable when numbers are larger   
-
-  
+ 
  
 
 ## Application Screenshot
 
 ![gradientcalculator](https://user-images.githubusercontent.com/22479692/126052868-ce42d6a3-7d57-4cbe-bd22-55babcaf61ac.png)
 
-  
+  ## Application Icon
+  ![ic_launcher-playstore](https://user-images.githubusercontent.com/22479692/126073975-bcd34f68-0af2-49e0-af1c-bdd3fdc04d78.png)
+
 
 
 
