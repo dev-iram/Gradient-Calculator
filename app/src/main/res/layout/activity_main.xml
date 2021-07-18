@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calculator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:fontFamily="sans-serif-light"
+        android:gravity="bottom|center"
+        android:paddingTop="110dp"
+        android:singleLine="true"
+        android:textColor="@color/colorGray"
+        android:textSize="30sp"
+        android:scrollbars = "vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="90+10"/>
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="bottom|center"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="100sp"
+        android:scrollbars = "vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInput"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="100"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_goneMarginTop="8dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOutput"
+        android:gravity="fill">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/clear"
+                android:textColor="@drawable/text_effect"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnLeftB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/left_bracket"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnRightB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/right_bracket"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/divide"
+                android:textColor="@drawable/operands_effect"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/seven"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/eight"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/nine"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/multiply"
+                android:textColor="@drawable/operands_effect"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/four"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/five"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/six"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/minus"
+                android:textColor="@drawable/operands_effect"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/one"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/two"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/three"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/plus"
+                android:textColor="@drawable/operands_effect"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/zerozero"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/zero"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/dot"
+                android:textColor="@drawable/text_effect"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_round_shape"
+                android:text="@string/equal"
+                android:textColor="@color/colorblack"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:scaleType="fitXY" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
