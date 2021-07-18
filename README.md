@@ -21,7 +21,7 @@ Simple Calculator app using Kotlin language with the Android Studio IDE. Feature
   ## More Information
   ✦ Minimum SDK: 28  
   ✦ Application only runs in Portrait Mode (Landscape disabled).   
-  ✦ TextViews are scrollable when numbers are larger   
+  ✦ TextViews are scrollable when numbers length increases 
   ✦ Simple calculations, such as: Addition, Subtraction, Division, Multiplication. 
  
  
