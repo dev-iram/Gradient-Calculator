@@ -22,6 +22,7 @@ Simple Calculator app using Kotlin language with the Android Studio IDE. Feature
 
   Minimum SDK: 28  
   Application only runs in Portrait Mode (Landscape disabled)
+  The 2 textviews on the screen can be scrolled when the number is large. 
 
 
 
