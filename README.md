@@ -17,7 +17,10 @@ Simple Calculator app using Kotlin language with the Android Studio IDE. Feature
   Within this application, I applied ConstraintLayout as the main layout for the XML layout. The XML layout uses only ConstraintLayout, with the use of the Table ViewGroup to help achieve rows and columns within the application for the placement of the calculator buttons. I also removed the action bar title from the application to ensure that the application is full screen and remains the center of the user's focus. 
 
 ## Application Screenshots
-Minimum SDK: 28  
+
+![gradientcalculator](https://user-images.githubusercontent.com/22479692/126052868-ce42d6a3-7d57-4cbe-bd22-55babcaf61ac.png)
+
+  Minimum SDK: 28  
 
 
 
